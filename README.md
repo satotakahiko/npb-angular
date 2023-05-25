@@ -1,5 +1,3 @@
-# Npb
+# Npb-angular
 
-Upload FireBase
-1. `ng build`
-2. `firebase deploy`
+https://mysample-npb.web.app/teams
