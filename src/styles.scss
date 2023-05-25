@@ -1,0 +1,62 @@
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+*:where(:not(iframe, canvas, img, svg, video, sub, sup):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  &.is-hover {
+    img,
+    span {
+      opacity: .75;
+    }
+  }
+
+  img,
+  span {
+    display: block;
+    max-width: 100%;
+    pointer-events: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}

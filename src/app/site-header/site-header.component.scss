@@ -1,0 +1,25 @@
+header {
+  height: 63px;
+  padding: 8px 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+
+  .npb-link {
+    > img {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  .leagues {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+
+    img {
+      height: 100%;
+      width: 40px;
+    }
+  }
+}

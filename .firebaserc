@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mysample-npb": {
+      "hosting": {
+        "npb": [
+          "mysample-npb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mysample-npb"
+  }
+}

@@ -1,0 +1,45 @@
+<article class="article">
+  <header class="header">
+    <img *ngIf="team.logo" [src]="team.logo.url">
+    <h3>{{team.name}}の選手一覧</h3>
+  </header>
+  <ul class="cards">
+    <li *ngFor="let player of players">
+      <dl
+        class="card"
+        [ngStyle]="{
+          'border-right-color': '#'+team.color,
+          'border-bottom-color': '#'+team.color
+        }"
+      >
+        <div>
+          <dt>選手名</dt>
+          <dd>{{player.name}}</dd>
+        </div>
+        <div>
+          <dt>選手名（カナ）</dt>
+          <dd>{{player.name_kana}}</dd>
+        </div>
+        <div>
+          <dt>年齢</dt>
+          <dd>{{player.age}}歳</dd>
+        </div>
+        <div>
+          <dt>身長</dt>
+          <dd>{{player.height}}cm</dd>
+        </div>
+        <div>
+          <dt>体重</dt>
+          <dd>{{player.body_weight}}kg</dd>
+        </div>
+        <div>
+          <dt>年俸</dt>
+          <dd>{{player.annual_salary | currency:'JPY'}}</dd>
+        </div>
+      </dl>
+    </li>
+  </ul>
+  <footer class="footer">
+    <button class="backBtn" (click)="goBack()">go back</button>
+  </footer>
+</article>

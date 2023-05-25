@@ -1,0 +1,13 @@
+header {
+  height: clamp(80px, 20vw, 160px);
+  display: flex;
+  align-items: center;
+  background-color: #2862ae;
+  padding: 0 20px;
+
+  > h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}

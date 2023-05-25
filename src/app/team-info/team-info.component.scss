@@ -1,0 +1,30 @@
+.block {
+  padding-left: 10px;
+}
+
+.team-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+
+  dt {
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  dd {
+    + dt {
+      margin-top: 5px;
+    }
+  }
+}
+
+.players-link {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}

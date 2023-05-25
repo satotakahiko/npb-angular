@@ -1,0 +1,17 @@
+<div class="box">
+  <img [src]="items.logo.url">
+  <div class="block" #block >
+    <h4 class="team-name">{{items.name}}</h4>
+    <dl class="info">
+      <dt>創設</dt>
+      <dd>{{formatDate(items.founding, "YYYY年MM月DD日")}}</dd>
+      <dt>本拠地</dt>
+      <dd>{{items.home}}</dd>
+      <dt>リーグ優勝回数</dt>
+      <dd>{{items.win_league}}回</dd>
+      <dt>日本シリーズ優勝</dt>
+      <dd>{{items.win_all}}回</dd>
+    </dl>
+    <a class="players-link" routerLink="/players/{{items.id}}">所属選手一覧</a>
+  </div>
+</div>

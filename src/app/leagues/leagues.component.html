@@ -1,0 +1,26 @@
+<div class="leagues">
+  <section class="league-section ce-league">
+    <div class="wrap-header">
+      <h3 class="section-header">
+        <img src="assets/image/33ZxpIji3DHyeE11675324532.png">
+        <span>CENTRAL LEAGUE</span>
+      </h3>
+    </div>
+    <div class="league">
+      <div class="teams" *ngFor="let item of teams.ce">
+        <app-team-info [items]="item"></app-team-info>
+      </div>
+    </div>
+  </section>
+  <section class="league-section pa-league">
+    <h3 class="section-header">
+      <img src="assets/image/33ZxpIji3DHyeE11675324532.png">
+      <span>PACIFIC LEAGUE</span>
+    </h3>
+    <div class="league">
+      <div class="teams" *ngFor="let item of teams.pa">
+        <app-team-info [items]="item"></app-team-info>
+      </div>
+    </div>
+  </section>
+</div>
